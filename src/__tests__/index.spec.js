@@ -19,7 +19,7 @@ describe('Hotel', () => {
 
     it('checkInGuest()', () => {
       const guest = hotel.checkInGuest('Bohdan', 'Onatskyi', 40);
-      expect(guest).toStrictEqual({
+      expect({ ...guest }).toStrictEqual({
         firstName: 'Bohdan',
         lastName: 'Onatskyi',
         money: 20,
