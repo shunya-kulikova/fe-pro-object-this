@@ -17,7 +17,7 @@ export const hotel = {
   },
 
   checkInGuest(guestFirstName, guestLastName, guestMoney) {
-    if (!this.getActualFreePlace() > 0) {
+    if (this.getActualFreePlace() === 0) {
       return 'Sorry, we have not free spaces';
     }
 
