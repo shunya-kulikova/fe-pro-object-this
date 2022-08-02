@@ -22,7 +22,7 @@ export const hotel = {
       }
   
       if (guestMoney < this.priceByPlace) {
-        return 'Sorry, you have not enough money';
+        return 'Sorry, you have not enough  money';
       }
   
       this.paidPerPlace();
